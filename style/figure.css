@@ -10,10 +10,19 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     text-align: center;
     margin-bottom: 20px;
 }
-
+h1{
+    font-size: 4rem;
+    margin: 50px;
+    letter-spacing: 15px;
+    font-weight: bold;
+}
 button {
     margin: 5px;
     padding: 10px;
@@ -23,15 +32,21 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
+.darkmode{
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50% ,-50%);
+    width: 100px;
+}
 button:hover {
     background-color: #666;
 }
 
 .container {
+    background-color: aliceblue;
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
