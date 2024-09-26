@@ -7,7 +7,6 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
     margin: 0;
-    height: 100vh;
 }
 
 header {
@@ -37,83 +36,4 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.squareRed {
-    width: 150px;
-    height: 150px;
-    background-color: red;
-    position: absolute;
-    top: 145px;
-    left: 80px;
-    transform: rotate(45deg);
-}
-
-.triangleGreen {
-    width: 0;
-    height: 0;
-    border-left: 300px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 300px solid green;
-    position: absolute;
-    top: 70px;
-    left: -320px;
-    transform: rotate(-45deg); /* Angle droit */
-}
-
-.triangleLime {
-    width: 0;
-    height: 0;
-    border-left: 200px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 200px solid lime;
-    position: absolute;
-    top: 240px;
-    left: 75px;
-}
-
-.triangleBlue {
-    width: 0;
-    height: 0;
-    border-left: 150px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 150px solid blue;
-    position: absolute;
-    top: 35px;
-    left: 195px;
-    transform: rotate(135deg);
-}
-
-.triangleYellow {
-    width: 0;
-    height: 0;
-    border-left: 300px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 300px solid yellow;
-    position: absolute;
-    top: -150px;
-    left: -100px;
-    transform: rotate(45deg); /* Angle droit */
-}
-
-.trapezePurple {
-    width: 150px;
-    height: 100px;
-    background-color: purple;
-    position: absolute;
-    top: -300px;
-    left: -300px;
-    transform: skewY(-45deg);
-}
-
-.triangleOrange {
-    width: 0;
-    height: 0;
-    border-left: 150px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 150px solid orange;
-    position: absolute;
-    top: 260px;
-    left: -25px;
-    transform: rotate(225deg); /* Angle droit */
 }
