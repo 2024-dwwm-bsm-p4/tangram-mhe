@@ -1,38 +1,115 @@
-// Sélectionner tous les boutons
-const boutons = document.querySelectorAll('button');
-
-// Ajouter des IDs uniques aux boutons
-boutons.forEach((bouton, index) => {
-    bouton.id = `btn-${index + 1}`; // Attribuer un id basé sur l'index
-});
-
-// Associer chaque bouton à la div correspondante
-const divs = {
-    'btn-1': document.querySelector('.carre'),  // Exemple pour le carré
-    'btn-2': document.querySelector('.chat'),   // Exemple pour le chat
-    'btn-3': document.querySelector('.cygne'),  // Exemple pour le cygne
-    'btn-4': document.querySelector('.canard'), // Exemple pour le canard
-    'btn-5': document.querySelector('.coeur'),  // Exemple pour le coeur
-    'btn-6': document.querySelector('.tortue'), // Exemple pour la tortue
-    'btn-7': document.querySelector('.bateau'), // Exemple pour le bateau
-    'btn-8': document.querySelector('.mystereyo') // Exemple pour le mystère
-};
-
-// Ajouter un gestionnaire d'événements à chaque bouton
-boutons.forEach(bouton => {
-    bouton.addEventListener('click', (event) => {
-        const boutonId = event.target.id; // Récupérer l'id du bouton cliqué
-        const div = divs[boutonId]; // Récupérer la div correspondante
-
-        if (div) {
-            // Basculer entre 'block' et 'none' pour afficher/masquer
-            if (div.style.display === 'none' || div.style.display === '') {
-                div.style.display = 'block'; // Afficher la div
-            } else {
-                div.style.display = 'none'; // Masquer la div
-            }
-        } else {
-            console.log('Aucun élément correspondant à ce bouton');
-        }
+// Fonction pour supprimer les balises <link> sauf celle avec style.css
+(function removeExtraLinks() {
+    const links = document.querySelectorAll("link");
+    links.forEach((link) => {
+      // Vérifier si le href de la balise <link> n'est pas style.css
+      if (!link.href.includes("style.css")) {
+        link.remove(); // Supprimer la balise <link>
+      }
     });
-});
+  })();
+  
+  // Récupérer tous les boutons
+  const buttons = document.querySelectorAll("button");
+  
+  let activeLink = null;
+  let isDarkMode = false; // Variable pour suivre l'état du mode sombre
+  
+  function loadCSS(href) {
+    if (activeLink) {
+      activeLink.remove();
+    }
+  
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+  
+    document.head.appendChild(link);
+  
+    activeLink = link;
+  
+    // Ajouter une animation après le chargement du CSS
+    const container = document.querySelector(".container");
+    container.style.opacity = 0; // Masquer l'élément
+    setTimeout(() => {
+      container.style.opacity = 1; // Révéler avec l'animation
+      container.style.transition = "opacity 1.5s"; // Animation sur 1.5 seconde
+    }, 500); // Délai court pour que la transition fonctionne
+  }
+  
+  // Fonction pour basculer le mode sombre
+  function toggleDarkMode() {
+    const body = document.body;
+  
+    if (!isDarkMode) {
+      // Retirer les styles de mode sombre
+      body.style.backgroundColor = "#ffffff"; // Inverse de #121212
+      body.style.color = "#121212"; // Inverse de #ffffff
+      const container = document.querySelector(".container");
+      container.style.backgroundColor = "#e0e0e0"; // Inverse de #1e1e1e
+      const buttons = document.querySelectorAll("button");
+      buttons.forEach((button) => {
+        button.style.backgroundColor = "#c6c6c6"; // Inverse de #3a3a3a
+        button.style.color = "#121212"; // Inverse de #ffffff
+      });
+    } else {
+      // Appliquer les styles de mode sombre
+      body.style.backgroundColor = "#121212"; // Couleur de fond sombre
+      body.style.color = "#ffffff"; // Couleur de texte claire
+      const container = document.querySelector(".container");
+      container.style.backgroundColor = "#1e1e1e"; // Couleur de fond du conteneur
+      const buttons = document.querySelectorAll("button");
+      buttons.forEach((button) => {
+        button.style.backgroundColor = "#3a3a3a"; // Couleur de fond des boutons
+        button.style.color = "#ffffff"; // Couleur du texte des boutons
+      });
+    }
+  
+    isDarkMode = !isDarkMode;
+  }
+  
+ 
+  buttons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const buttonClass = e.target.classList[0];
+  
+      switch (buttonClass) {
+        case "darkmode":
+          toggleDarkMode(); 
+           break; 
+        case "figure1":
+          loadCSS("./style/square.css");
+          break;
+        case "figure2":
+          loadCSS("./style/cat.css");
+          break;
+        case "figure3":
+          loadCSS("./style/swan.css");
+          break;
+        case "figure4":
+          loadCSS("./style/duck.css");
+          break;
+        case "figure5":
+          loadCSS("./style/heart.css");
+          break;
+        case "figure6":
+          loadCSS("./style/turtle.css");
+          break;
+        case "figure7":
+          loadCSS("./style/boat.css");
+          break;
+        case "figure8":
+          loadCSS("./style/mysterymax.css");
+          break;
+        case "figure9":
+          loadCSS("./style/mysteryyo.css");
+          break;
+        case "figure10":
+          loadCSS("./style/mysteryflo.css");
+          break;
+        default:
+          console.log("Aucun fichier CSS correspondant");
+      }
+    });
+  });
+  

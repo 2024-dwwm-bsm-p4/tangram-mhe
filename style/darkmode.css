@@ -1,0 +1,58 @@
+body {
+    background-color: #ffffff; /* Inverse de #121212 */
+    color: #121212; /* Inverse de #ffffff */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 50px;
+    letter-spacing: 15px;
+    font-weight: bold;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #c6c6c6; /* Inverse de #3a3a3a */
+    color: #121212; /* Inverse de #ffffff */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.darkmode {
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+}
+
+button:hover {
+    background-color: #999999; /* Inverse de #666 */
+}
+
+.container {
+    background-color: #e0e0e0; /* Inverse de #1e1e1e */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
