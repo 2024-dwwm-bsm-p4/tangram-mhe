@@ -1,0 +1,120 @@
+body {
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.squareRed {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 228px;
+    left: 110px;
+    transform: rotate(45deg);
+}
+
+.triangleGreen {
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 300px solid green;
+    position: absolute;
+    top: 258px;
+    left: 250px;
+    transform: rotate(225deg); /* Angle droit */
+}
+
+.triangleLime {
+    width: auto;
+    height: auto;
+    border-left: 210px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 210px solid lime;
+    position: absolute;
+    top: 303px;
+    left: 162px;
+    transform: rotate(45deg);
+}
+
+.triangleBlue {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 150px solid blue;
+    position: absolute;
+    top: 123px;
+    left: 216px;
+    transform: rotate(135deg);
+}
+
+.triangleYellow {
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 300px solid yellow;
+    position: absolute;
+    top: 258px;
+    left: -180px;
+    transform: rotate(225deg);
+}
+
+.trapezePurple {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    position: absolute;
+    top: 408px;
+    left: 44px;
+    transform: skew(-135deg) rotate(0deg);
+}
+
+.triangleOrange {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 150px solid orange;
+    position: absolute;
+    top: 123px;
+    left: 4px;
+    transform: rotate(315deg); /* Angle droit */
+}
