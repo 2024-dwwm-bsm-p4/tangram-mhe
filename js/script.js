@@ -45,8 +45,7 @@
       // Retirer les styles de mode sombre
       body.style.backgroundColor = "#ffffff"; // Inverse de #121212
       body.style.color = "#121212"; // Inverse de #ffffff
-      const container = document.querySelector(".container");
-      container.style.backgroundColor = "#e0e0e0"; // Inverse de #1e1e1e
+
       const buttons = document.querySelectorAll("button");
       buttons.forEach((button) => {
         button.style.backgroundColor = "#c6c6c6"; // Inverse de #3a3a3a
