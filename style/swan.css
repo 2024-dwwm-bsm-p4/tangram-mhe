@@ -3,8 +3,8 @@
     height: 150px;
     background-color: red;
     position: absolute;
-    top: 210px;
-    left: 270px;
+    top: 260px;
+    left: 320px;
     transform: rotate(0deg);
 }
 
@@ -15,8 +15,8 @@
     border-right: 0px solid transparent;
     border-bottom: 300px solid green;
     position: absolute;
-    top: -5px;
-    left: -35px;
+    top: 45px;
+    left: 15px;
     transform: rotate(90deg); /* Angle droit */
 }
 
@@ -27,8 +27,8 @@
     border-right: 0px solid transparent;
     border-bottom: 210px solid lime;
     position: absolute;
-    top: 305px;
-    left: 55px;
+    top: 355px;
+    left: 105px;
 }
 
 .triangleBlue {
@@ -38,8 +38,8 @@
     border-right: 0px solid transparent;
     border-bottom: 150px solid blue;
     position: absolute;
-    top: 365px;
-    left: 270px;
+    top: 415px;
+    left: 320px;
     transform: rotate(-180deg);
 }
 
@@ -50,17 +50,17 @@
     border-right: 0px solid transparent;
     border-bottom: 300px solid yellow;
     position: absolute;
-    top: 150px;
-    left: -100px;
+    top: 200px;
+    left: -50px;
     transform: rotate(45deg); /* Angle droit */
 }
 
 .trapezePurple {
-    width: 100px;
+    width: 150px;
     height: 150px;
     background-color: purple;
     position: absolute;
-    top: 80px;
+    top: 105px;
     left: 245px;
     transform: skew(45deg) rotate(-90deg);
 }
