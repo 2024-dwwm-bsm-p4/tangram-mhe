@@ -53,3 +53,24 @@ button:hover {
     align-items: center;
     flex-wrap: wrap;
 }
+
+
+/* Styles pour les pièces */
+.piece {
+    width: 50px; /* Largeur de la pièce */
+    height: 50px; /* Hauteur de la pièce */
+    position: absolute; /* Positionnement absolu pour le déplacement */
+    transition: transform 1s ease, opacity 0.5s ease ; /* Transition douce */
+}
+
+/* Classe pour agglutiner les pièces */
+.agglutine {
+    transform: scale(1.2); /* Agrandir légèrement */
+    opacity: 1; /* Rendre visible */
+}
+
+/* Classe pour disperser les pièces */
+.disperse {
+    transform: scale(0.5); /* Réduire la taille */
+    opacity: 0; /* Rendre invisible */
+}

@@ -55,9 +55,7 @@
       // Appliquer les styles de mode sombre
       body.style.backgroundColor = "#121212"; // Couleur de fond sombre
       body.style.color = "#ffffff"; // Couleur de texte claire
-      const container = document.querySelector(".container");
-      container.style.backgroundColor = "#1e1e1e"; // Couleur de fond du conteneur
-      const buttons = document.querySelectorAll("button");
+       const buttons = document.querySelectorAll("button");
       buttons.forEach((button) => {
         button.style.backgroundColor = "#3a3a3a"; // Couleur de fond des boutons
         button.style.color = "#ffffff"; // Couleur du texte des boutons
@@ -111,4 +109,14 @@
       }
     });
   });
-  
+  function addPieceClassToChildren() {
+    const container = document.querySelector('.container');
+    const children = container.children;  
+    
+    Array.from(children).forEach(child => {
+        child.classList.add('piece'); // Ajouter la classe piece à chaque enfant
+    });
+}
+
+// Appeler la fonction pour ajouter la classe
+addPieceClassToChildren();
