@@ -44,8 +44,8 @@ button:hover {
     height: 150px;
     background-color: red;
     position: absolute;
-    top: 50px;
-    left: -1px;
+    top: 130px;
+    left: -5px;
     transform: rotate(45deg);
 }
 
@@ -56,20 +56,20 @@ button:hover {
     border-right: 0px solid transparent;
     border-bottom: 300px solid green;
     position: absolute;
-    top: 370px;
-    left: 70px;
+    top: 430px;
+    left: 100px;
     transform: rotate(0deg); /* Angle droit */
 }
 
 .triangleLime {
     width: 0;
     height: 0;
-    border-left: 200px solid transparent;
+    border-left: 210px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 200px solid lime;
+    border-bottom: 210px solid lime;
     position: absolute;
-    top: 200px;
-    left: 50px;
+    top: 255px;
+    left: 75px;
     transform: rotate(135deg);
 }
 
@@ -80,7 +80,7 @@ button:hover {
     border-right: 0px solid transparent;
     border-bottom: 150px solid blue;
     position: absolute;
-    top: -55px;
+    top: 20px;
     left: 105px;
     transform: rotate(135deg);
 }
@@ -92,18 +92,18 @@ button:hover {
     border-right: 0px solid transparent;
     border-bottom: 300px solid yellow;
     position: absolute;
-    top: 215px;
-    left: 5px;;
+    top: 275px;
+    left: 35px;
     transform: rotate(-45deg);
 }
 
 .trapezePurple {
     width: 150px;
-    height: 100px;
+    height: 150px;
     background-color: purple;
     position: absolute;
-    top: 495px;
-    left: 375px;
+    top: 505px;
+    left: 405px;
     transform: skewY(-45deg);
 }
 
@@ -114,7 +114,7 @@ button:hover {
     border-right: 0px solid transparent;
     border-bottom: 150px solid orange;
     position: absolute;
-    top: -55px;
-    left: -105px;
+    top: 20px;
+    left: -115px;
     transform: rotate(315deg); /* Angle droit */
 }
