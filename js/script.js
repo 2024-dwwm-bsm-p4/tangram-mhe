@@ -1,19 +1,19 @@
-// Fonction pour supprimer les balises <link> sauf celle avec style.css
+
 (function removeExtraLinks() {
     const links = document.querySelectorAll("link");
     links.forEach((link) => {
-      // Vérifier si le href de la balise <link> n'est pas style.css
+
       if (!link.href.includes("style.css")) {
-        link.remove(); // Supprimer la balise <link>
+        link.remove(); 
       }
     });
   })();
   
-  // Récupérer tous les boutons
+
   const buttons = document.querySelectorAll("button");
   
   let activeLink = null;
-  let isDarkMode = false; // Variable pour suivre l'état du mode sombre
+  let isDarkMode = false; 
   
   function loadCSS(href) {
     if (activeLink) {
@@ -28,13 +28,13 @@
   
     activeLink = link;
   
-    // Ajouter une animation après le chargement du CSS
+
     const container = document.querySelector(".container");
-    container.style.opacity = 0; // Masquer l'élément
+    container.style.opacity = 0; 
     setTimeout(() => {
-      container.style.opacity = 1; // Révéler avec l'animation
-      container.style.transition = "opacity 1.5s"; // Animation sur 1.5 seconde
-    }, 500); // Délai court pour que la transition fonctionne
+      container.style.opacity = 1; 
+      container.style.transition = "opacity 1.5s"; 
+    }, 500);
   }
   
   // Fonction pour basculer le mode sombre
@@ -42,23 +42,22 @@
     const body = document.body;
   
     if (!isDarkMode) {
-      // Retirer les styles de mode sombre
-      body.style.backgroundColor = "#ffffff"; // Inverse de #121212
-      body.style.color = "#121212"; // Inverse de #ffffff
+      body.style.backgroundColor = "#ffffff"; 
+      body.style.color = "#121212";
 
       const buttons = document.querySelectorAll("button");
       buttons.forEach((button) => {
-        button.style.backgroundColor = "#c6c6c6"; // Inverse de #3a3a3a
-        button.style.color = "#121212"; // Inverse de #ffffff
+        button.style.backgroundColor = "#c6c6c6"; 
+        button.style.color = "#121212";
       });
     } else {
-      // Appliquer les styles de mode sombre
-      body.style.backgroundColor = "#121212"; // Couleur de fond sombre
-      body.style.color = "#ffffff"; // Couleur de texte claire
+
+      body.style.backgroundColor = "#121212"; 
+      body.style.color = "#ffffff"; 
        const buttons = document.querySelectorAll("button");
       buttons.forEach((button) => {
-        button.style.backgroundColor = "#3a3a3a"; // Couleur de fond des boutons
-        button.style.color = "#ffffff"; // Couleur du texte des boutons
+        button.style.backgroundColor = "#3a3a3a";
+        button.style.color = "#ffffff"; 
       });
     }
   
@@ -114,9 +113,9 @@
     const children = container.children;  
     
     Array.from(children).forEach(child => {
-        child.classList.add('piece'); // Ajouter la classe piece à chaque enfant
+        child.classList.add('piece'); 
     });
 }
 
-// Appeler la fonction pour ajouter la classe
+
 addPieceClassToChildren();
