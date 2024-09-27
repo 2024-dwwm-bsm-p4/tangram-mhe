@@ -1,6 +1,6 @@
 body {
-    background-color: #1c1c1c;
-    color: white;
+    background-color: #121212;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,8 +26,8 @@ h1{
 button {
     margin: 5px;
     padding: 10px;
-    background-color: #444;
-    color: white;
+    background-color: #3a3a3a;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -42,8 +42,9 @@ button:hover {
     background-color: #666;
 }
 
+
 .container {
-    background-color: aliceblue;
+    background-color: #1e1e1e;
     position: relative;
     width: 100%;
     height: 100%;
@@ -51,5 +52,25 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    left: -100px;
+}
+
+
+/* Styles pour les pièces */
+.piece {
+    width: 50px; /* Largeur de la pièce */
+    height: 50px; /* Hauteur de la pièce */
+    position: absolute; /* Positionnement absolu pour le déplacement */
+    transition: transform 1s ease, opacity 0.5s ease ; /* Transition douce */
+}
+
+/* Classe pour agglutiner les pièces */
+.agglutine {
+    transform: scale(1.2); /* Agrandir légèrement */
+    opacity: 1; /* Rendre visible */
+}
+
+/* Classe pour disperser les pièces */
+.disperse {
+    transform: scale(0.5); /* Réduire la taille */
+    opacity: 0; /* Rendre invisible */
 }
