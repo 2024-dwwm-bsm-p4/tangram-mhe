@@ -3,8 +3,8 @@
     height: 150px;
     background-color: red;
     position: absolute;
-    top: 462px;
-    left: 272px;
+    top: 445px;
+    left: 275px;
     transform: rotate(45deg);
 }
 
@@ -15,8 +15,8 @@
     border-right: 0px solid transparent;
     border-bottom: 300px solid green;
     position: absolute;
-    top: 99px;
-    left: -67px;
+    top: 90px;
+    left: -75px;
     transform: rotate(44deg); /* Angle droit */
 }
 
@@ -27,8 +27,8 @@
     border-right: 0px solid transparent;
     border-bottom: 210px solid lime;
     position: absolute;
-    top: 249px;
-    left: 90px;
+    top: 245px;
+    left: 85px;
     transform: rotate(-1deg);
 }
 
@@ -39,8 +39,8 @@
     border-right: 0px solid transparent;
     border-bottom: 150px solid blue;
     position: absolute;
-    top: 464px;
-    left: -30px;
+    top: 445px;
+    left: -45px;
     transform: rotate(-45deg);
 }
 
@@ -51,7 +51,7 @@
     border-right: 0px solid transparent;
     border-bottom: 300px solid yellow;
     position: absolute;
-    top: 98px;
+    top: 90px;
     left: 150px;
     transform: rotate(-46deg); /* Angle droit */
 }
@@ -61,8 +61,8 @@
     height: 150px;
     background-color: purple;
     position: absolute;
-    top: 98px;
-    left: -200px;
+    top: 85px;
+    left: -220px;
     transform: skew(45deg) rotate(-90deg);
 }
 
@@ -73,8 +73,8 @@
     border-right: 0px solid transparent;
     border-bottom: 150px solid orange;
     position: absolute;
-    top: 466px;
-    left: -30px;
+    top: 445px;
+    left: -50px;
     transform: rotate(135deg); /* Angle droit */
 }
 
